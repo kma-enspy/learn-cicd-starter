@@ -3,7 +3,7 @@ package auth
 import (
     "reflect"
     "testing"
-	"errors"
+	"error"
 )
 
 func TestGetAPIKey(t *testing.T) {
