@@ -1,9 +1,9 @@
 package auth
 
 import (
-    "reflect"
-    "testing"
 	"errors"
+	"reflect"
+	"testing"
 )
 
 func TestGetAPIKey(t *testing.T) {
@@ -22,7 +22,7 @@ func TestGetAPIKey(t *testing.T) {
 			wantErr: nil,
 		},
 		{
-			name: "missing authorization header",
+			name:    "missing authorization header",
 			headers: map[string][]string{},
 			want:    "",
 			wantErr: ErrNoAuthHeaderIncluded,
